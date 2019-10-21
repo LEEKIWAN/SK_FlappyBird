@@ -14,6 +14,9 @@
 		8363AA1A23598274006669B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8363AA1923598274006669B2 /* Assets.xcassets */; };
 		8363AA1D23598274006669B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8363AA1B23598274006669B2 /* LaunchScreen.storyboard */; };
 		8363AA2523599FC6006669B2 /* ActionList.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8363AA2423599FC6006669B2 /* ActionList.sks */; };
+		83AB47B9235A03770028ACC4 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47B8235A03770028ACC4 /* Layer.swift */; };
+		83AB47BB235A0AD10028ACC4 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */; };
+		83E71F37235D3D4F00D44A45 /* Minercraftory.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8363AA1C23598274006669B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8363AA1E23598274006669B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8363AA2423599FC6006669B2 /* ActionList.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ActionList.sks; sourceTree = "<group>"; };
+		83AB47B8235A03770028ACC4 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minercraftory.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				8363AA1B23598274006669B2 /* LaunchScreen.storyboard */,
 				8363AA1E23598274006669B2 /* Info.plist */,
 				8363AA2423599FC6006669B2 /* ActionList.sks */,
+				83AB47B8235A03770028ACC4 /* Layer.swift */,
+				83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */,
+				83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -130,6 +139,7 @@
 			files = (
 				8363AA1823598271006669B2 /* Main.storyboard in Resources */,
 				8363AA1A23598274006669B2 /* Assets.xcassets in Resources */,
+				83E71F37235D3D4F00D44A45 /* Minercraftory.ttf in Resources */,
 				8363AA1D23598274006669B2 /* LaunchScreen.storyboard in Resources */,
 				8363AA2523599FC6006669B2 /* ActionList.sks in Resources */,
 			);
@@ -144,7 +154,9 @@
 			files = (
 				8363AA1323598271006669B2 /* GameScene.swift in Sources */,
 				8363AA1523598271006669B2 /* GameViewController.swift in Sources */,
+				83AB47BB235A0AD10028ACC4 /* PhysicsCategory.swift in Sources */,
 				8363AA0D23598271006669B2 /* AppDelegate.swift in Sources */,
+				83AB47B9235A03770028ACC4 /* Layer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
