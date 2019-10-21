@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8360E435235D8F9200645C7F /* SoundFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360E434235D8F9200645C7F /* SoundFX.swift */; };
+		8360E43D235D9CFB00645C7F /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E437235D9CFB00645C7F /* bgm.mp3 */; };
+		8360E43E235D9CFB00645C7F /* sfxSwooshing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E438235D9CFB00645C7F /* sfxSwooshing.mp3 */; };
+		8360E43F235D9CFB00645C7F /* sfxHit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E439235D9CFB00645C7F /* sfxHit.mp3 */; };
+		8360E440235D9CFB00645C7F /* sfxDie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E43A235D9CFB00645C7F /* sfxDie.mp3 */; };
+		8360E441235D9CFB00645C7F /* sfxPoint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E43B235D9CFB00645C7F /* sfxPoint.mp3 */; };
+		8360E442235D9CFB00645C7F /* sfxWing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8360E43C235D9CFB00645C7F /* sfxWing.mp3 */; };
+		8361E854235D406700287B5F /* Minercraftory.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */; };
 		8363AA0D23598271006669B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363AA0C23598271006669B2 /* AppDelegate.swift */; };
 		8363AA1323598271006669B2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363AA1223598271006669B2 /* GameScene.swift */; };
 		8363AA1523598271006669B2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363AA1423598271006669B2 /* GameViewController.swift */; };
@@ -16,10 +24,16 @@
 		8363AA2523599FC6006669B2 /* ActionList.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8363AA2423599FC6006669B2 /* ActionList.sks */; };
 		83AB47B9235A03770028ACC4 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47B8235A03770028ACC4 /* Layer.swift */; };
 		83AB47BB235A0AD10028ACC4 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */; };
-		83E71F37235D3D4F00D44A45 /* Minercraftory.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8360E434235D8F9200645C7F /* SoundFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFX.swift; sourceTree = "<group>"; };
+		8360E437235D9CFB00645C7F /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		8360E438235D9CFB00645C7F /* sfxSwooshing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfxSwooshing.mp3; sourceTree = "<group>"; };
+		8360E439235D9CFB00645C7F /* sfxHit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfxHit.mp3; sourceTree = "<group>"; };
+		8360E43A235D9CFB00645C7F /* sfxDie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfxDie.mp3; sourceTree = "<group>"; };
+		8360E43B235D9CFB00645C7F /* sfxPoint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfxPoint.mp3; sourceTree = "<group>"; };
+		8360E43C235D9CFB00645C7F /* sfxWing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfxWing.mp3; sourceTree = "<group>"; };
 		8363AA0923598271006669B2 /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8363AA0C23598271006669B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8363AA1223598271006669B2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -45,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8360E436235D9CEF00645C7F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8360E437235D9CFB00645C7F /* bgm.mp3 */,
+				8360E43A235D9CFB00645C7F /* sfxDie.mp3 */,
+				8360E439235D9CFB00645C7F /* sfxHit.mp3 */,
+				8360E43B235D9CFB00645C7F /* sfxPoint.mp3 */,
+				8360E438235D9CFB00645C7F /* sfxSwooshing.mp3 */,
+				8360E43C235D9CFB00645C7F /* sfxWing.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		8363AA0023598271006669B2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +91,7 @@
 		8363AA0B23598271006669B2 /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				8360E436235D9CEF00645C7F /* Sounds */,
 				8363AA0C23598271006669B2 /* AppDelegate.swift */,
 				8363AA1223598271006669B2 /* GameScene.swift */,
 				8363AA1423598271006669B2 /* GameViewController.swift */,
@@ -72,6 +100,7 @@
 				8363AA1B23598274006669B2 /* LaunchScreen.storyboard */,
 				8363AA1E23598274006669B2 /* Info.plist */,
 				8363AA2423599FC6006669B2 /* ActionList.sks */,
+				8360E434235D8F9200645C7F /* SoundFX.swift */,
 				83AB47B8235A03770028ACC4 /* Layer.swift */,
 				83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */,
 				83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */,
@@ -138,10 +167,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8363AA1823598271006669B2 /* Main.storyboard in Resources */,
+				8360E440235D9CFB00645C7F /* sfxDie.mp3 in Resources */,
 				8363AA1A23598274006669B2 /* Assets.xcassets in Resources */,
-				83E71F37235D3D4F00D44A45 /* Minercraftory.ttf in Resources */,
+				8361E854235D406700287B5F /* Minercraftory.ttf in Resources */,
+				8360E43D235D9CFB00645C7F /* bgm.mp3 in Resources */,
+				8360E43E235D9CFB00645C7F /* sfxSwooshing.mp3 in Resources */,
 				8363AA1D23598274006669B2 /* LaunchScreen.storyboard in Resources */,
+				8360E441235D9CFB00645C7F /* sfxPoint.mp3 in Resources */,
+				8360E43F235D9CFB00645C7F /* sfxHit.mp3 in Resources */,
 				8363AA2523599FC6006669B2 /* ActionList.sks in Resources */,
+				8360E442235D9CFB00645C7F /* sfxWing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8363AA1323598271006669B2 /* GameScene.swift in Sources */,
+				8360E435235D8F9200645C7F /* SoundFX.swift in Sources */,
 				8363AA1523598271006669B2 /* GameViewController.swift in Sources */,
 				83AB47BB235A0AD10028ACC4 /* PhysicsCategory.swift in Sources */,
 				8363AA0D23598271006669B2 /* AppDelegate.swift in Sources */,

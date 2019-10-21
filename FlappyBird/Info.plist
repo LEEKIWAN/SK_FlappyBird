@@ -43,7 +43,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Minercraftory</string>
+		<string>Minercraftory.ttf</string>
 	</array>
 </dict>
 </plist>
