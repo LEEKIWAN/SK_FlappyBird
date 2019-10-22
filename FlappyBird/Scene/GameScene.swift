@@ -16,11 +16,15 @@ enum GameState {
 }
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    var background = SKSpriteNode()
+    
     var bgmPlayer = SKAudioNode()
     let cameraNode = SKCameraNode()
     var bird: SKNode = SKSpriteNode(imageNamed: "bird1")
     
     var gameState: GameState = .ready
+    
+    var tutorial = SKSpriteNode(imageNamed: "tutorial")
     
     var score: Int = 0 {
         didSet {
@@ -38,6 +42,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -9.8)
         
+        createTutorial()
         createSocre()
         createBird()
         createEnvironment()
@@ -68,6 +73,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
      //MARK: - Create
+    
+    func createTutorial() {
+        tutorial.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
+        tutorial.zPosition = Layer.tutorial
+        addChild(tutorial)
+    }
     
     func createSocre() {
         scoreLabel.fontSize = 24
@@ -100,8 +111,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 //        thruster.position = CGPoint.zero
         thruster.position = CGPoint(x: -bird.frame.size.width / 2, y: 0)
         thruster.zPosition = -0.1
-        
-        
+                
         let thrusterEffect = SKEffectNode()
         thrusterEffect.addChild(thruster)
         bird.addChild(thrusterEffect)
@@ -134,13 +144,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
         }
         
-        let skyTexture = environmentAtlas.textureNamed("sky")
+//        let skyTexture = environmentAtlas.textureNamed("sky")
+        guard let skyTexture = background.texture else {
+            return
+        }
+        
         let skyCreateCount = Int(ceil(self.size.width / skyTexture.size().width))
         
         for i in 0 ... skyCreateCount {
             let sky = SKSpriteNode(texture: skyTexture)
             sky.anchorPoint = CGPoint.zero
-            sky.position = CGPoint(x: CGFloat(i) * sky.size.width, y: landTexture.size().height)
+//            sky.position = CGPoint(x: CGFloat(i) * sky.size.width, y: landTexture.size().height)
+            sky.position = CGPoint(x: CGFloat(i) * sky.size.width, y: 0)
             sky.zPosition = Layer.sky
             
             self.addChild(sky)
@@ -371,6 +386,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.bird.physicsBody?.isDynamic = true
             self.bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 7))
             self.createInfinitePipe(duration: 4)
+            
+            let fadeOut = SKAction.fadeOut(withDuration: 0.5)
+            let wait = SKAction.wait(forDuration: 0.5)
+            let remove = SKAction.removeFromParent()
+            self.tutorial.run(SKAction.sequence([fadeOut, wait, remove]))
+            
         case .playing:
             self.run(SoundFX.wing)
             bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
@@ -381,7 +402,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 let nodesArray = self.nodes(at: location)
                 if nodesArray.first?.name == "restartButton" {
                     self.run(SoundFX.swooshing)
-                    let scene = GameScene(size: self.size)
+                    let scene = MenuScene(size: self.size)
                     let transmission = SKTransition.doorsOpenHorizontal(withDuration: 1)
                     self.view?.presentScene(scene, transition: transmission)
 
