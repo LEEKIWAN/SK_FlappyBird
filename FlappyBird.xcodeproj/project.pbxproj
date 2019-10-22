@@ -24,6 +24,8 @@
 		8363AA2523599FC6006669B2 /* ActionList.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8363AA2423599FC6006669B2 /* ActionList.sks */; };
 		83AB47B9235A03770028ACC4 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47B8235A03770028ACC4 /* Layer.swift */; };
 		83AB47BB235A0AD10028ACC4 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */; };
+		83AE5E69235DA6F400490661 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83AE5E68235DA6F400490661 /* Rain.sks */; };
+		83AE5E6B235DA71C00490661 /* Thruster.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83AE5E6A235DA71C00490661 /* Thruster.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		8363AA2423599FC6006669B2 /* ActionList.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ActionList.sks; sourceTree = "<group>"; };
 		83AB47B8235A03770028ACC4 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		83AE5E68235DA6F400490661 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		83AE5E6A235DA71C00490661 /* Thruster.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Thruster.sks; sourceTree = "<group>"; };
 		83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minercraftory.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 				8360E434235D8F9200645C7F /* SoundFX.swift */,
 				83AB47B8235A03770028ACC4 /* Layer.swift */,
 				83AB47BA235A0AD10028ACC4 /* PhysicsCategory.swift */,
+				83AE5E68235DA6F400490661 /* Rain.sks */,
+				83AE5E6A235DA71C00490661 /* Thruster.sks */,
 				83E71F36235D3D4F00D44A45 /* Minercraftory.ttf */,
 			);
 			path = FlappyBird;
@@ -174,7 +180,9 @@
 				8360E43E235D9CFB00645C7F /* sfxSwooshing.mp3 in Resources */,
 				8363AA1D23598274006669B2 /* LaunchScreen.storyboard in Resources */,
 				8360E441235D9CFB00645C7F /* sfxPoint.mp3 in Resources */,
+				83AE5E6B235DA71C00490661 /* Thruster.sks in Resources */,
 				8360E43F235D9CFB00645C7F /* sfxHit.mp3 in Resources */,
+				83AE5E69235DA6F400490661 /* Rain.sks in Resources */,
 				8363AA2523599FC6006669B2 /* ActionList.sks in Resources */,
 				8360E442235D9CFB00645C7F /* sfxWing.mp3 in Resources */,
 			);

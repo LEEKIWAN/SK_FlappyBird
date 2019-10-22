@@ -41,6 +41,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         createSocre()
         createBird()
         createEnvironment()
+        createRain()
         
         bgmPlayer = SKAudioNode(fileNamed: "bgm.mp3")
         bgmPlayer.autoplayLooped = true
@@ -94,6 +95,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let flyingAction = SKAction(named: "Flying")
         bird.run(flyingAction!)
+        
+        guard let thruster = SKEmitterNode(fileNamed: "Thruster") else { return }
+//        thruster.position = CGPoint.zero
+        thruster.position = CGPoint(x: -bird.frame.size.width / 2, y: 0)
+        thruster.zPosition = -0.1
+        
+        
+        let thrusterEffect = SKEffectNode()
+        thrusterEffect.addChild(thruster)
+        bird.addChild(thrusterEffect)
         
     }
     
@@ -232,6 +243,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         pipeCollision.run(moveSequence)
     }
     
+    func createRain() {
+        guard let rain = SKEmitterNode(fileNamed: "Rain") else { return }
+        rain.position = CGPoint(x: self.size.width, y: self.size.height)
+        rain.zPosition = Layer.rain
+        rain.advanceSimulationTime(30)
+        addChild(rain)
+    }
     
     
     //MARK: -  Game Over
